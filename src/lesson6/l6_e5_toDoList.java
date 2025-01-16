@@ -6,14 +6,13 @@ import java.util.Scanner;
 public class l6_e5_toDoList {
     public static void main(String[] args) {
 //        nonInteractiveToDoList();
-        interactiveToDoList();
+        toDoListSwitch();
     }
 
     static Scanner scanner = new Scanner(System.in);
+    static ArrayList<String> arrayList = new ArrayList<>();
 
     private static void nonInteractiveToDoList() {
-
-        ArrayList<String> arrayList = new ArrayList<String>();
 
         System.out.println("This is your to-do list!");
 
@@ -68,7 +67,7 @@ public class l6_e5_toDoList {
                 int indexToRemove = scanner.nextInt();
                 scanner.nextLine(); // adding as the preceding nextInt will cause failure
 
-                if (indexToRemove >= 0 && indexToRemove < arrayList.size()){
+                if (indexToRemove >= 0 && indexToRemove < arrayList.size()) {
                     arrayList.remove(indexToRemove);
                     System.out.println("Removed index: " + indexToRemove);
                 } else {
@@ -95,13 +94,68 @@ public class l6_e5_toDoList {
         }
     }
 
-    private static void interactiveToDoList() {
+    private static void toDoListSwitch() {
+        System.out.println("This is your to-do list!");
 
+        ArrayList<Boolean> completedList = new ArrayList<>();
+        boolean isMenuActive = true;
 
+        while (isMenuActive) {
+            System.out.println("What would you like to do?" + "\n" + "Options:" + "\n" +
+                    "1. Add a new task" + "\n" +
+                    "2. Mark a Task as Completed" + "\n" +
+                    "3. Remove all completed task" + "\n" +
+                    "4. Display tasks" + "\n" +
+                    "5. Exit");
 
+            int choice = scanner.nextInt();
+            scanner.nextLine();
+            switch (choice) {
+                case 1:
+                    System.out.println("Please enter your new task: ");
+                    String newTask = scanner.nextLine();
+                    arrayList.add(newTask);
+                    completedList.add(false);
+                    break;
+
+                case 2:
+                    for (int i = 0; i < arrayList.size(); i++) {
+                        System.out.println("Index is: " + (i + 1) + " and value is " + arrayList.get(i));
+                    }
+                    System.out.print("Enter the Index number of the task to mark as completed: ");
+
+                    int taskNumber = scanner.nextInt();
+                    if (taskNumber > 0 && taskNumber <= arrayList.size()) {
+                        completedList.set(taskNumber - 1, true);
+                        System.out.println("Task marked as completed.");
+                    } else {
+                        System.out.println("Invalid task number.");
+                    }
+                    break;
+                case 3:
+                    for (int i = arrayList.size() - 1; i >= 0; i--) {
+                        if (completedList.get(i)) {
+                            arrayList.remove(i);
+                            completedList.remove(i);
+                        }
+                    }
+                    System.out.println("Completed tasks removed.");
+                    break;
+                case 4:
+                    System.out.println("\nCurrent Tasks:");
+                    for (int i = 0; i < arrayList.size(); i++) {
+                        System.out.println((i + 1) + ". " + arrayList.get(i) + (completedList.get(i) ? " (Completed)" : ""));
+                    }
+                    break;
+                case 5:
+                    System.out.println("Exiting To-Do List. Goodbye!");
+                    scanner.close();
+                    //return;
+                    isMenuActive = false;
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+            }
+        }
     }
-    }
-
-
-
-
+}
