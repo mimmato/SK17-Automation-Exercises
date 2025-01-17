@@ -22,9 +22,9 @@ public class l6_e9_bookStack {
             switch (choice) {
                 case 1:
                     System.out.println("Enter a book name: ");
-                    String newClient = scanner.nextLine();
-                    bookStack.add(newClient);
-                    System.out.println(newClient + " added to queue");
+                    String newBook = scanner.nextLine();
+                    bookStack.add(newBook);
+                    System.out.println(newBook + " added to queue");
                     break;
                 case 2:
                     System.out.println(bookStack.peek());
