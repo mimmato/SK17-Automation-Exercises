@@ -6,16 +6,6 @@ import java.util.Scanner;
 public class l7_e1_trackingInventory {
     public static void main(String[] args) {
 
-//        Tracking Inventory in a Store - Use a HashMap to manage a store's
-//        inventory, where the product name is the key, and the quantity in stock is
-//        the value:
-//• Add several products to the inventory with their quantities.
-//• Check the quantity of a specific product.
-//• Restock a product by increasing its quantity.
-//• Mark a product as out of stock by setting its quantity to zero.
-//• Remove a product from the inventory
-//• Print the entire inventory to see the stock levels.
-
         Scanner scanner = new Scanner(System.in);
 
         HashMap<String, Integer> storeInventory = new HashMap<>();
@@ -62,10 +52,6 @@ public class l7_e1_trackingInventory {
         String productToRemove = scanner.nextLine();
 
         System.out.println("Removing " + productToRemove + " from inventory " + storeInventory.remove(productToRemove));
-
-//        System.out.println("New quantity of " + productToMarkAsOutOfStock + " is " + storeInventory.get(productToMarkAsOutOfStock));
-
-
 
         //• Print the entire inventory to see the stock levels.
         System.out.println("Here is a list of the entire inventory: " + storeInventory);
