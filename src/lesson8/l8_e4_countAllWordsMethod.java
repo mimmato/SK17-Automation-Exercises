@@ -28,6 +28,5 @@ public class l8_e4_countAllWordsMethod {
             System.out.println("This is word: " + i);
         }
         System.out.println("There are " + newText.length + " words in " + text);
-
     }
 }
