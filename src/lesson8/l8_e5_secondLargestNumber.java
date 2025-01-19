@@ -2,6 +2,7 @@ package lesson8;
 
 public class l8_e5_secondLargestNumber {
     public static void main(String[] args) {
+        System.out.println("This number is the seconds largest from the array: ");
         secondLargest();
     }
 
@@ -17,7 +18,7 @@ public class l8_e5_secondLargestNumber {
                     secondBigger = number;
 
                     if (isSecondBigger){
-                        System.out.println("This number is the seconds largest from the array: " + number);
+                        System.out.println(number);
                         break;
                     } isSecondBigger = true;
                 }
