@@ -24,11 +24,11 @@ public class l8_e9_palindrome {
 //                and 123454321 are palindromes.
 
         for (int i = 0; i < text.length(); i++) {
-            System.out.println("Characters NOT in reverse are: " + text.charAt(i));
+            System.out.println("Normal order: " + text.charAt(i));
             }
-
+        System.out.println("________these 2 should be compared _________");
         for (int b = text.length() - 1; b >= 0; b--) {
-            System.out.println("Characters in reverse are: " + text.charAt(b));
+            System.out.println("Reverse order: " + text.charAt(b));
         }
     }
 }
