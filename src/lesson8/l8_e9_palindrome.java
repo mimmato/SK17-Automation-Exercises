@@ -6,10 +6,9 @@ public class l8_e9_palindrome {
     public static void main(String[] args) {
         System.out.println("Begin program... ");
 
-
         System.out.println("Enter text to check: ");
         String text = scanner.nextLine();
-        System.out.println("This is your string: " + text);
+        System.out.println("   ");
 
         palindrome(text);
     }
@@ -17,18 +16,22 @@ public class l8_e9_palindrome {
     static Scanner scanner = new Scanner(System.in);
 
     private static void palindrome(String text) {
-
-//        A takes as input a non-negative integer and returns true if the number is a
-//        palindrome. Non-negative integer is called a palindrome if it reads forward
-//        and backward in the same way. For example, the numbers 5, 121, 3443,
-//                and 123454321 are palindromes.
-
+        boolean compareLoops = true;
         for (int i = 0; i < text.length(); i++) {
-            System.out.println("Normal order: " + text.charAt(i));
+            char normalOrder = text.charAt(i);
+            char reverseOrder = text.charAt(text.length() - 1 - i);
+
+            System.out.println("Normal order: " + normalOrder + " // Reverse order: " + reverseOrder);
+
+            if (normalOrder != reverseOrder) {
+                compareLoops = false;
             }
-        System.out.println("________these 2 should be compared _________");
-        for (int b = text.length() - 1; b >= 0; b--) {
-            System.out.println("Reverse order: " + text.charAt(b));
+        }
+        System.out.println("   ");
+        if (compareLoops) {
+            System.out.println("The provided string is palindrome");
+        } else {
+            System.out.println("The provided string is NOT palindrome");
         }
     }
 }
