@@ -25,8 +25,6 @@ public class Movie {
         System.out.println("Movie title is: " + this.title);
         System.out.println("Genre is: " + this.genre);
         System.out.println("Rating is: " + this.rating);
-
-
     }
 
 }
