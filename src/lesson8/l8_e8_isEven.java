@@ -1,6 +1,5 @@
 package lesson8;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class l8_e8_isEven {

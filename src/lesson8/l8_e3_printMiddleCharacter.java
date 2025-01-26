@@ -35,7 +35,6 @@ public class l8_e3_printMiddleCharacter {
         } else{
             System.out.println("String length is odd!");
             characterPosition1 = text.length() / 2;
-
             System.out.println("The middle character is: " + text.charAt(characterPosition1));
         }
     }
