@@ -19,7 +19,7 @@ public class l9_e4_interactiveProductInventory {
             int choice = scanner.nextInt();
             scanner.nextLine();
 
-            switch (choice) {,
+            switch (choice) {
                 case 1:
                     // Add a product
                     System.out.print("Enter product name: ");
