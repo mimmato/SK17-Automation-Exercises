@@ -13,7 +13,7 @@ public class l10_e1_scannerTryCatch_Nested {
 
         try (Scanner scanner = new Scanner(System.in)) {
             while (true) {
-                try {
+                try  {
                     System.out.println("Enter an integer: ");
                     int number = scanner.nextInt();
                     System.out.println("You entered a number - " + number);
