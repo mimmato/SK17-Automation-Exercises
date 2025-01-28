@@ -8,7 +8,7 @@ public class enhancedProduct {
     public int quantity;
     public boolean saleStatus;
 
-    static String categoryOnSale = "fruits";
+    static String categoryOnSale = "meat";
 
     public enhancedProduct(String productName, double price, String category, int quantity, boolean saleStatus){
 
