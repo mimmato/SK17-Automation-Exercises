@@ -32,7 +32,7 @@ public class l10_e2_fileRead {
                 int integer = Integer.parseInt(textInFile);
                 integers.add(integer);
                 System.out.println("Num is " + integer);
-            } catch (NumberFormatException exception2) {
+            } catch (NumberFormatException exception1) {
                 System.out.println("Found an invalid integer in our list: " + textInFile);
                 System.out.println("---------------");
             }
@@ -46,8 +46,8 @@ public class l10_e2_fileRead {
                     throw new IllegalArgumentException("The provided number is negative: " + i);
                 }
                 System.out.println("The square root of " + i + " is - " + Math.sqrt(i));
-            } catch (IllegalArgumentException exception){
-                System.out.println(exception.getMessage());
+            } catch (IllegalArgumentException exception2){
+                System.out.println(exception2.getMessage());
             }
         }
     }
