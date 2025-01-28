@@ -21,7 +21,8 @@ public class l10_e1_scannerTryCatch {
             }
 //            finally {
 //                scanner.close();
-            }
+//            }
         }
     }
+}
 
