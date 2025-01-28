@@ -43,11 +43,15 @@ public class l10_e2_fileRead {
         for (int i : integers) {
             try {
                 if (i < 0) {
-                    throw new IllegalArgumentException("The provided number is negative: " + i);
+                    throw new IllegalArgumentException("The provided number is negative, cannot calculate its root: " + i);
                 }
                 System.out.println("The square root of " + i + " is - " + Math.sqrt(i));
             } catch (IllegalArgumentException exception2){
                 System.out.println(exception2.getMessage());
+//                System.out.println(exception2);
+//                System.out.println("Error: The provided number is negative, cannot calculate its root: " + i);
+                System.out.println("----------------------");
+
             }
         }
     }
