@@ -42,4 +42,11 @@ public class enhancedProduct {
         System.out.println("Sale status: " + this.saleStatus);
     }
 
+// 2 methods for e4 if made interactive
+//    public static void setCategoryOnSale(String newCategory) {
+//        categoryOnSale = newCategory;
+//    }
+//    public void updateSaleStatus() {
+//        this.saleStatus = this.category.equals(categoryOnSale);
+//    }
 }
