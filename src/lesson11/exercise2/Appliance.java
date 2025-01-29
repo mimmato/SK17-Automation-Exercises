@@ -19,6 +19,5 @@ public class Appliance {
         System.out.println("Type of appliance: " + type);
         System.out.println("Brand: " + brand);
         System.out.println("Power Consumption: " + powerConsumption);
-
     }
 }
