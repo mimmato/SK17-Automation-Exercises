@@ -2,24 +2,28 @@ package lesson11;
 
 public class Triangle extends Shape {
 
-    public static double sideA;
-    public static double sideB;
+    public double width;
+    public double length;
 
-    public Triangle(double sideA, double sideB){
-//        super();
-        Triangle.sideA = sideA;
-        Triangle.sideB = sideB;
+    public Triangle(double width, double length){
+        super();
+        this.width = width;
+        this.length = length;
     }
 
 
     @Override
     public double calcArea(){
-        return (sideA * sideB) / 2;
+        return (width * length) / 2;
     }
 
     @Override
     public void printArea(){
-        System.out.println("This is the area of a triangle: " + calcArea());
+        System.out.println("Calculating triangle area...");
+        System.out.println("------------------------");
+        super.printArea();
+        System.out.println("------------------------");
+
     }
 }
 

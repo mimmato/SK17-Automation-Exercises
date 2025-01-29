@@ -2,13 +2,13 @@ package lesson11;
 
 public class Rectangle extends Shape{
 
-    public static double sideA;
-    public static double sideB;
+    public double sideA;
+    public double sideB;
 
     public Rectangle(double sideA, double sideB){
-//        super();
-        Rectangle.sideA = sideA;
-        Rectangle.sideB = sideB;
+        super();
+        this.sideA = sideA;
+        this.sideB = sideB;
     }
 
 
@@ -19,6 +19,10 @@ public class Rectangle extends Shape{
 
     @Override
     public void printArea(){
-        System.out.println("This is the area of a rectangle: " + calcArea());
+        System.out.println("Calculating rectangle area...");
+        System.out.println("------------------------");
+        super.printArea();
+        System.out.println("------------------------");
+
     }
 }

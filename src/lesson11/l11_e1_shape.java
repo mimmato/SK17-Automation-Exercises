@@ -8,28 +8,26 @@ public class l11_e1_shape {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Circle area");
-        System.out.println("Enter circle dimension (radius): ");
-        Circle circle = new Circle(scanner.nextDouble());
+        System.out.println("Enter radius to calc circle area: ");
+        double radius = scanner.nextDouble();
+        Shape circle = new Circle(radius);
         circle.printArea();
-        System.out.println("------------------------");
 
-
-        System.out.println("Rectangle area");
-        System.out.println("Enter length of side A: ");
-        System.out.println("Enter length of side B: ");
-        Rectangle rectangle = new Rectangle(scanner.nextDouble(), scanner.nextDouble());
+        System.out.println("Enter side A and Side B to calc rectangle area.");
+        System.out.println("Side A: ");
+        double sideA = scanner.nextDouble();
+        System.out.println("Side B: ");
+        double sideB = scanner.nextDouble();
+        Shape rectangle = new Rectangle(sideA, sideB);
         rectangle.printArea();
-        System.out.println("------------------------");
 
-        System.out.println("Triangle area");
+        System.out.println("Enter width and length to calc triangle area.");
         System.out.println("Enter triangle width: ");
+        double width = scanner.nextDouble();
         System.out.println("Enter triangle length: ");
-        Triangle triangle = new Triangle(scanner.nextDouble(), scanner.nextDouble());
+        double length = scanner.nextDouble();
+        Shape triangle = new Triangle(width, length);
         triangle.printArea();
-
-
-
 
     }
 }
