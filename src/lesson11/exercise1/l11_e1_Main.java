@@ -1,8 +1,8 @@
-package lesson11;
+package lesson11.exercise1;
 
 import java.util.Scanner;
 
-public class l11_e1_shape {
+public class l11_e1_Main {
 
     public static void main(String[] args) {
 
