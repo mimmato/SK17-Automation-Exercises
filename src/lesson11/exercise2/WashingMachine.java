@@ -31,12 +31,10 @@ public class WashingMachine extends Appliance {
     }
 
     public void printApplianceInfo(){
-
         super.printApplianceInfo();
 
         System.out.println("Color: " + color);
         System.out.println("Load Capacity: " + loadCapacity);
-
     }
 
 }
