@@ -6,7 +6,7 @@ public class l11_e2_Main {
 
         System.out.println("--------------");
 
-        Appliance washingMachine = new WashingMachine("LG", "1.02(kWh)", "Washing Machine", "white", "large" );
+        Appliance washingMachine = new WashingMachine("LG", "1.02(kWh)", "Washing Machine", "white", "large");
         washingMachine.printApplianceInfo();
         washingMachine.turnOn();
         washingMachine.washingCycle();

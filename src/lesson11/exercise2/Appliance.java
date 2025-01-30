@@ -38,13 +38,13 @@ public class Appliance {
     }
 
     public boolean turnOn(){
-        System.out.println("Starting washing machine...");
+        System.out.println("Starting Appliance machine...");
         this.washingOnOff = true;
         return true;
     }
 
     public boolean turnOff(){
-        System.out.println("Stopping washing machine...");
+        System.out.println("Stopping Appliance machine...");
         this.washingOnOff = false;
         return false;
     }

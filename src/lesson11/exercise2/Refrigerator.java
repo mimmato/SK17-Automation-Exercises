@@ -9,7 +9,7 @@ public class Refrigerator extends Appliance {
 
     public Refrigerator(String brand, String powerConsumption, String type) {
         super(brand, powerConsumption, type);
-//        this.temperature = temperature;
+
     }
 
     public void setTemperature(){

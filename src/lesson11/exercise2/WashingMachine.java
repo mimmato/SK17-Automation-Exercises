@@ -4,7 +4,6 @@ public class WashingMachine extends Appliance {
 
     public String color;
     public String loadCapacity;
-    public boolean washingOnOff = false;
 
     public WashingMachine(String brand, String powerConsumption, String type, String color, String loadCapacity){
         super(brand, powerConsumption, type);
