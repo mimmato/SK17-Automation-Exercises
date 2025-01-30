@@ -19,6 +19,10 @@ public class l11_e2_Main {
         refrigerator.setTemperature();
         refrigerator.printApplianceInfo();
 
+//        Appliance refrigerator = new Refrigerator("Mraz", "8.02(kWh)", "Refrigerator");
+//        refrigerator.setTemperature();
+//        refrigerator.printApplianceInfo();
+
         Appliance appliance = new Appliance("Imagine Appliance", "Very High", "General Appliance");
         appliance.printApplianceInfo();
     }
