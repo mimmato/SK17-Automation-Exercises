@@ -16,6 +16,8 @@ public class Microwave extends Appliance{
         this.capacity = capacity;
         this.curLoad = curLoad;
     }
+
+    @Override
     public void setTemperature(){
         System.out.println("Adjust desired microwave temperature: ");
         this.curTemp = scanner.nextInt();

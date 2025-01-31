@@ -6,6 +6,7 @@ public class Appliance {
     public String powerConsumption;
     public String type;
     public boolean factoryReset;
+    public boolean washingOnOff = false;
 
     public Appliance(String brand, String powerConsumption, String type, boolean factoryReset) {
         this.brand = brand;
@@ -33,6 +34,24 @@ public class Appliance {
     public void resetSpecificAppliance() {
         if (factoryResetON()) {
             System.out.println("Adjusting value to default one.");
+        }
+    }
+
+    public boolean turnOn(){
+        System.out.println("Starting washing machine...");
+        this.washingOnOff = true;
+        return true;
+    }
+
+    public boolean turnOff(){
+        System.out.println("Stopping washing machine...");
+        this.washingOnOff = false;
+        return false;
+    }
+
+    public void washingCycle(){
+        if (washingOnOff){
+            System.out.println("Washing cycle initiated because this.washingOnOff was set to true");
         }
     }
 }

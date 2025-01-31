@@ -7,16 +7,18 @@ public class Refrigerator extends Appliance {
     Scanner scanner = new Scanner(System.in);
     int temperature;
 
-    public Refrigerator(String brand, String powerConsumption, String type, boolean factoryReset) {
+    public Refrigerator(String brand, String powerConsumption, String type, boolean factoryReset, int temperature) {
         super(brand, powerConsumption, type, factoryReset);
 //        this.temperature = temperature;
     }
 
+    @Override
     public void setTemperature(){
         System.out.println("Enter desired refrigerator temperature: ");
         this.temperature = scanner.nextInt();
 
         if (!(this.temperature >= -3 && this.temperature <=5)){
+//            throw new IllegalArgumentException("Invalid temperature: " + this.curTemp + ". Temperature cannot be lower than -3 and higher than 5.");
             this.temperature = 0;
         }
     }

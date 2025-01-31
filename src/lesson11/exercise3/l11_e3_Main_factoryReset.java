@@ -1,10 +1,6 @@
 package lesson11.exercise3;
 
-import lesson11.exercise3.Appliance;
-import lesson11.exercise3.Refrigerator;
-import lesson11.exercise3.WashingMachine;
-
-public class l11_e3_Main {
+public class l11_e3_Main_factoryReset {
 
     public static void main(String[] args) {
 
