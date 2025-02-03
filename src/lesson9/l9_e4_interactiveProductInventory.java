@@ -68,6 +68,7 @@ public class l9_e4_interactiveProductInventory {
                     break;
                 case 4:
                     System.out.println("Exiting program.");
+                    return;
                 default:
                     System.out.println("Invalid choice. Please try again.");
             }

@@ -1,25 +1,55 @@
 package lesson12.exercise2;
 
-import java.util.HashSet;
 import java.util.Scanner;
 
 public class Employee {
-//    Scanner scanner = new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in);
 //    private HashSet<String> employeeData;
 
     public int id;
-    public String firstName;
-    public String lastName;
+    private String firstName;
+    private String lastName;
 
-    public Employee(int id, String firstName, String lastName){
+    public double salary;
+    private double annualSalary;;
+
+//    private double raiseSalary;
+    public double percentageIncrease;
+
+    public Employee(int id, String firstName, String lastName, double salary, double percentageIncrease){
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.salary = salary;
+        this.annualSalary = getAnnualSalary();
+        this.percentageIncrease = percentageIncrease;
     }
 
-    public void printEmployeeData(){
+    public void getName() {
+        System.out.println("Names: " + this.firstName + " " + this.lastName);
+    }
+
+    public void printAllEmployeeData(){
         System.out.println("Employee ID: " + this.id);
-        System.out.println("First Name: " + this.firstName);
-        System.out.println("Last Name: " + this.lastName);
+           getName();
+        System.out.println("Salary specified: " + this.salary);
+        System.out.println("Annual salary: " + getAnnualSalary());
+    }
+
+    public void setAnnualSalary(int salary) {
+        this.annualSalary = salary * 12;
+    }
+    public double getAnnualSalary() {
+        return this.annualSalary;
+    }
+
+    public void setRaiseSalary(double percentageIncrease) {
+        double raiseAmount = this.salary * (percentageIncrease / 100);
+        this.salary += raiseAmount;
+        this.annualSalary = this.salary * 12;
+
+        System.out.println("Salary increased by " + percentageIncrease + "%.");
+        System.out.println("New Monthly Salary: " + this.salary);
+        System.out.println("New Annual Salary: " + this.annualSalary);
     }
 }
