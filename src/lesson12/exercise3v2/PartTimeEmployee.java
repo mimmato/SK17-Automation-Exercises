@@ -14,22 +14,5 @@ public class PartTimeEmployee extends Employee_v2{
     public void calcMonthlySalary() {
         double partTimeSalary = this.hourlyRate * this.hoursWorked;
         System.out.println("Monthly Part Time salary: " + partTimeSalary);
-
-    }
-
-    public double getHoursWorked() {
-        return hoursWorked;
-    }
-
-    public void setHoursWorked(double hoursWorked) {
-        this.hoursWorked = hoursWorked;
-    }
-
-    public double getHourlyRate() {
-        return hourlyRate;
-    }
-
-    public void setHourlyRate(double hourlyRate) {
-        this.hourlyRate = hourlyRate;
     }
 }
