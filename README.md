@@ -75,7 +75,7 @@ This repository contains my Java exercises, organized by lessons and exercises. 
 - [Exercise 8: Check Even Number](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson8/l8_e8_isEven.java)
 - [Exercise 9: Palindrome Checker](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson8/l8_e9_palindrome.java)
 
-### Lesson 9: Advanced OOP and File Handling
+### Lesson 9: Classes and Objects in Java. Static and Non-static Fields and Methods. Constructors.
 - [Exercise 1: Movie Attributes](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson9/l9_e1_movieAttributes.java)
 - [Exercise 2: Student Grades](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson9/l9_e2_studentGrades.java)
 - [Exercise 3: Products Inventory](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson9/l9_e3_productsInventory.java)
