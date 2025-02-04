@@ -32,7 +32,7 @@ This repository contains my Java exercises, organized by lessons and exercises. 
 
 ## Table of Contents
 
-### Lesson 4: Basic Programming and Control Flow
+### Lesson 4: Operators and Expressions. Conditional Statements. Basic Programming and Control Flow.
 - [Exercise 1: Age Check](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson4/l4_e1_ageCheck.java)
 - [Exercise 2: Days of the Week](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson4/l4_e2_daysOfTheWeek.java)
 - [Exercise 3: Leap Year Check](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson4/l4_e3_leapOrNot.java)
@@ -40,7 +40,7 @@ This repository contains my Java exercises, organized by lessons and exercises. 
 - [Exercise 5: Triangle Angles](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson4/l4_e5_trianglesAngles.java)
 - [Exercise 6: Vacation Options](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson4/l4_e6_vacationOptions.java)
 
-### Lesson 5: Loops and Lists
+### Lesson 5: Loops
 - [Exercise 1: Largest Number](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson5/l5_e1_largestNumber.java)
 - [Exercise 2: Divisible by 5](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson5/l5_e2_divideBy5.java)
 - [Exercise 3: Reverse List](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson5/l5_e3_reverseList.java)
@@ -49,7 +49,7 @@ This repository contains my Java exercises, organized by lessons and exercises. 
 - [Exercise 6: Average in List](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson5/l5_e6_averageInList.java)
 - [Exercise 7: Numbers Guessing Game](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson5/l5_e7_numbersGuessing.java)
 
-### Lesson 6: Arrays, Matrices, and Data Structures
+### Lesson 6: Data structures. Static and Dynamic. Array, Multidimensional Array, ArrayList, LinkedList, Queue, Stack.
 - [Exercise 1: Print Sum of Array](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson6/l6_e1_printSumArray.java)
 - [Exercise 2: 2D Matrix](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson6/l6_e2_2dMatrix.java)
 - [Exercise 3: 2D Matrix Scan](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson6/l6_e3_2dMatrixScan.java)
@@ -60,7 +60,7 @@ This repository contains my Java exercises, organized by lessons and exercises. 
 - [Exercise 8: Clients Line Queue](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson6/l6_e8_clientsLineQueue.java)
 - [Exercise 9: Book Stack](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson6/l6_e9_bookStack.java)
 
-### Lesson 7: Object-Oriented Programming
+### Lesson 7: Data structures Advanced. HashSet and HashMap.
 - [Exercise 1: Inventory Tracking](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson7/l7_e1_trackingInventory.java)
 - [Exercise 2: Guest List](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson7/l7_e2_guestList.java)
 
@@ -75,7 +75,7 @@ This repository contains my Java exercises, organized by lessons and exercises. 
 - [Exercise 8: Check Even Number](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson8/l8_e8_isEven.java)
 - [Exercise 9: Palindrome Checker](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson8/l8_e9_palindrome.java)
 
-### Lesson 9: Classes and Objects in Java. Static and Non-static Fields and Methods. Constructors.
+### Lesson 9: Classes and Objects. Static and Non-static Fields and Methods. Constructors.
 - [Exercise 1: Movie Attributes](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson9/l9_e1_movieAttributes.java)
 - [Exercise 2: Student Grades](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson9/l9_e2_studentGrades.java)
 - [Exercise 3: Products Inventory](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson9/l9_e3_productsInventory.java)
@@ -85,7 +85,7 @@ This repository contains my Java exercises, organized by lessons and exercises. 
 - [Class: Product](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson9/Product.java)
 - [Class: Student](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson9/Student.java)
 
-### Lesson 10: Exception Handling and File Operations
+### Lesson 10: Exception Handling
 - [Exercise 1: Scanner Try-Catch](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson10/l10_e1_scannerTryCatch.java)
 - [Exercise 2: File Read](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson10/l10_e2_fileRead.java)
 - [Exercise 3: Age Validation](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson10/l10_e3_ageValidate.java)
@@ -96,9 +96,8 @@ This repository contains my Java exercises, organized by lessons and exercises. 
 - [Exercise 3: Factory Reset](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson11/exercise3)
 - [Exercise 4: Appliances Revisited](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson11/exercise4)
 
-### Lesson 12: More OOP and Abstraction and Encapsulation
+### Lesson 12: OOP and Abstraction and Encapsulation
 - [Exercise 1: Shapes](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson12/exercise1)
-- [Exercise 2: Employee Classes](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson12/exercise2)
-- [Exercise 3: Employee Types](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson12/exercise3)
-- [Exercise 4: Employee Types V2](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson12/exercise3v2)
+- [Exercise 2: Employee Class (HashMap)](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson12/exercise2v2)
+- [Exercise 3: Employee abstract Class (HashMap)](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson12/exercise3v2)
 
