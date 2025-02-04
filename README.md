@@ -90,13 +90,13 @@ This repository contains my Java exercises, organized by lessons and exercises. 
 - [Exercise 2: File Read](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson10/l10_e2_fileRead.java)
 - [Exercise 3: Age Validation](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson10/l10_e3_ageValidate.java)
 
-### Lesson 11: OOP and Inheritance
+### Lesson 11: OOP and Inheritance and Polymorphism
 - [Exercise 1: Shapes](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson11/exercise1)
 - [Exercise 2: Appliances](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson11/exercise2)
 - [Exercise 3: Factory Reset](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson11/exercise3)
 - [Exercise 4: Appliances Revisited](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson11/exercise4)
 
-### Lesson 12: More OOP and Polymorphism
+### Lesson 12: More OOP and Abstraction and Encapsulation
 - [Exercise 1: Shapes](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson12/exercise1)
 - [Exercise 2: Employee Classes](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson12/exercise2)
 - [Exercise 3: Employee Types](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson12/exercise3)
