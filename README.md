@@ -87,9 +87,9 @@ This repository contains my Java exercises, organized by lessons and exercises. 
 
 ### Lesson 11: OOP. Inheritance and Polymorphism
 - [Exercise 1: Shapes](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson11/exercise1)
-- [Exercise 2: Appliances](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson11/exercise2)
-- [Exercise 3: Factory Reset](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson11/exercise3)
-- [Exercise 4: Appliances Revisited](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson11/exercise4)
+- [Exercise 2: Appliances (Inheritance methods)](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson11/exercise2)
+- [Exercise 3: Appliances (Polymorphism)](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson11/exercise3)
+- [Exercise 4: Appliances Advanced](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson11/exercise4)
 
 ### Lesson 12: OOP II. Abstraction and Encapsulation. Interfaces.
 - [Exercise 1: Shapes](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson12/exercise1)
