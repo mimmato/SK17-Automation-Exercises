@@ -1,12 +1,12 @@
 package lesson12.exercise2v2;
 
-import java.util.HashSet;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class l12_e2_Main_v2 {
     public static void main(String[] args) {
 
-        HashSet<Employee_v2> employeeV2Data = new HashSet<>();
+        HashMap<Integer, Employee_v2> employeeV2Data = new HashMap<>();
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
@@ -28,32 +28,24 @@ public class l12_e2_Main_v2 {
                     int id = scanner.nextInt();
                     scanner.nextLine();
 
-                    System.out.println("Enter First Name: ");
-                    String firstName = scanner.nextLine();
-
-                    System.out.println("Enter Last Name: ");
-                    String lastName = scanner.nextLine();
-
-                    System.out.println("Enter employee salary: ");
-                    int salary = scanner.nextInt();
-                    scanner.nextLine();
-
-                    Employee_v2 listData = new Employee_v2(id, firstName, lastName, salary);
-
-                    boolean ifIdExists = false;
-                    for (Employee_v2 i : employeeV2Data) {
-                        if (i.getId() == id) {
-                            ifIdExists = true;
-                            break;
-                        }
-                    }
-                    if (!ifIdExists) {
-                        employeeV2Data.add(listData);
-                        listData.setAnnualSalary(salary);
-                        System.out.println("New employee added");
-                    } else {
-                        System.out.println("-------------------");
+                    if (employeeV2Data.containsKey(id)) {
                         System.out.println("ID is taken - " + id + " ! Enter a different one.");
+                    } else {
+                        System.out.println("Enter First Name: ");
+                        String firstName = scanner.nextLine();
+
+                        System.out.println("Enter Last Name: ");
+                        String lastName = scanner.nextLine();
+
+                        System.out.println("Enter employee salary: ");
+                        int salary = scanner.nextInt();
+                        scanner.nextLine();
+
+
+                        Employee_v2 newEmployee = new Employee_v2(id, firstName, lastName, salary);
+                        employeeV2Data.put(id, newEmployee);
+                        System.out.println("New employee added.");
+
                     }
                     break;
 
@@ -61,33 +53,26 @@ public class l12_e2_Main_v2 {
                     if (employeeV2Data.isEmpty()) {
                         System.out.println("No employee info yet.");
                     } else {
-                        System.out.println("Employee data list");
-                        for (Employee_v2 i : employeeV2Data) {
+                        System.out.println("Employee data list: ");
+                        for (Employee_v2 i : employeeV2Data.values()) {
                             System.out.println("----------------");
                             i.printAllEmployeeData();
                         }
                         System.out.println("----------------");
                     }
                     break;
-
                 case 3:
                     if (employeeV2Data.isEmpty()) {
                         System.out.println("No employee info yet.");
                     } else {
                         System.out.println("Enter employee ID to modify: ");
                         int employeeId = scanner.nextInt();
-                        Employee_v2 selectEmployeeV2 = null;
 
-                        for (Employee_v2 i : employeeV2Data) {
-                            if (i.getId() == employeeId) {
-                                selectEmployeeV2 = i;
-                                break;
-                            }
-                        }
-                        if (selectEmployeeV2 != null) {
+                        if (employeeV2Data.containsKey(employeeId)) {
+                            Employee_v2 selectedEmployee = employeeV2Data.get(employeeId);
                             System.out.println("Enter percentage increase: ");
-                            double percentageIncrease = scanner.nextDouble();
-                            selectEmployeeV2.setRaiseSalary(percentageIncrease);
+                            double percentage = scanner.nextDouble();
+                            selectedEmployee.setRaiseSalary(percentage);
                         } else {
                             System.out.println("Employee ID: " + employeeId + " not found.");
                         }
