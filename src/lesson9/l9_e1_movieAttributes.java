@@ -53,7 +53,6 @@ public class l9_e1_movieAttributes {
 
         Movie movie8 = new Movie("Popaye",selectGenre, 4.8);
 
-
         movie1.printMovieInfo();
         System.out.println("-------------------");
 

@@ -18,11 +18,6 @@ public class l9_e2_studentGrades {
 
         student2.printStudentInfo();
 
-        // average calc
-        // take new double array for each student, do sum and do divide by num
-
-
-
     }
 
 }

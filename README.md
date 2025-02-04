@@ -61,15 +61,15 @@ This repository contains my Java exercises, organized by lessons and exercises. 
 - [Exercise 9: Book Stack](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson6/l6_e9_bookStack.java)
 
 ### Lesson 7: Data structures Advanced. HashSet and HashMap.
-- [Exercise 1: Inventory Tracking](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson7/l7_e1_trackingInventory.java)
-- [Exercise 2: Guest List](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson7/l7_e2_guestList.java)
+- [Exercise 1: Inventory Tracking(HashMap)](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson7/l7_e1_trackingInventory.java)
+- [Exercise 2: Guest List (HashSet)](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson7/l7_e2_guestList.java)
 
 ### Lesson 8: Methods and Functionality
 - [Exercise 1: Smallest Number Method](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson8/l8_e1_smallestNumberMethod.java)
 - [Exercise 2: Average Numbers Method](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson8/l8_e2_averageNumbersMethod.java)
 - [Exercise 3: Print Middle Character](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson8/l8_e3_printMiddleCharacter.java)
 - [Exercise 4: Count All Words Method](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson8/l8_e4_countAllWordsMethod.java)
-- [Exercise 5: Second Largest Number](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson8/l8_e5_secondLargestNumber.java)
+- [Exercise 5: Second-Largest Number](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson8/l8_e5_secondLargestNumber.java)
 - [Exercise 6: Remove Duplicates](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson8/l8_e6_removeDuplicates.java)
 - [Exercise 7: Last Character](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson8/l8_e7_lastCharacter.java)
 - [Exercise 8: Check Even Number](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson8/l8_e8_isEven.java)
@@ -81,9 +81,6 @@ This repository contains my Java exercises, organized by lessons and exercises. 
 - [Exercise 3: Products Inventory](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson9/l9_e3_productsInventory.java)
 - [Exercise 4: Enhanced Product Inventory](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson9/l9_e4_enhancedProductInventory.java)
 - [Exercise 5: Interactive Product Inventory](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson9/l9_e4_interactiveProductInventory.java)
-- [Class: Movie](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson9/Movie.java)
-- [Class: Product](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson9/Product.java)
-- [Class: Student](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson9/Student.java)
 
 ### Lesson 10: Exception Handling
 - [Exercise 1: Scanner Try-Catch](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson10/l10_e1_scannerTryCatch.java)
@@ -96,7 +93,7 @@ This repository contains my Java exercises, organized by lessons and exercises. 
 - [Exercise 3: Factory Reset](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson11/exercise3)
 - [Exercise 4: Appliances Revisited](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson11/exercise4)
 
-### Lesson 12: OOP and Abstraction and Encapsulation
+### Lesson 12: OOP and Abstraction and Encapsulation. Interfaces.
 - [Exercise 1: Shapes](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson12/exercise1)
 - [Exercise 2: Employee Class (HashMap)](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson12/exercise2v2)
 - [Exercise 3: Employee abstract Class (HashMap)](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson12/exercise3v2)
