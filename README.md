@@ -85,7 +85,7 @@ This repository contains my Java exercises, organized by lessons and exercises. 
 - [Exercise 2: File Read](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson10/l10_e2_fileRead.java)
 - [Exercise 3: Age Validation](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson10/l10_e3_ageValidate.java)
 
-### Lesson 11: OOP. Inheritance and Polymorphism
+### Lesson 11: OOP. Inheritance and Polymorphism.
 - [Exercise 1: Shapes](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson11/exercise1)
 - [Exercise 2: Appliances (Inheritance methods)](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson11/exercise2)
 - [Exercise 3: Appliances (Polymorphism)](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson11/exercise3)
