@@ -1,13 +1,14 @@
-package lesson12.exercise2;
+package lesson12.exercise3;
 
 import java.util.HashSet;
 import java.util.Scanner;
 
-public class l12_e2_Main {
+public class l12_e3_Main {
     public static void main(String[] args) {
 
         HashSet<Employee> employeeData = new HashSet<>();
         Scanner scanner = new Scanner(System.in);
+        FullTimeEmployee listData = null;
 
         while (true) {
             System.out.println("""
@@ -15,7 +16,9 @@ public class l12_e2_Main {
                     1. Add employee details
                     2. View employee details
                     3. Raise salary
-                    4. Exit""");
+                    4. Calculate salary of Full Time Employee
+                    5. Calculate salary of Part Time Employee
+                    6. Exit""");
 
             int choice = scanner.nextInt();
             scanner.nextLine();
@@ -33,12 +36,12 @@ public class l12_e2_Main {
                     System.out.println("Enter Last Name: ");
                     String lastName = scanner.nextLine();
 
-                    System.out.println("Enter employee salary: ");
-                    int salary = scanner.nextInt();
+                    System.out.println("Enter monthly employee salary: ");
+                    double baseSalary = scanner.nextInt();
                     scanner.nextLine();
 
                     double percentageIncrease = 0;
-                    Employee listData = new Employee(id, firstName, lastName, salary, percentageIncrease);
+                    listData = new FullTimeEmployee(id, firstName, lastName, percentageIncrease, baseSalary);
 
                     boolean ifIdExists = false;
                     for (Employee i : employeeData) {
@@ -49,7 +52,7 @@ public class l12_e2_Main {
                     }
                     if (!ifIdExists) {
                         employeeData.add(listData);
-                        listData.setAnnualSalary(salary);
+                        listData.setAnnualSalary(baseSalary);
                         System.out.println("New employee added");
                     } else {
                         System.out.println("-------------------");
@@ -93,7 +96,16 @@ public class l12_e2_Main {
                         }
                     }
                     break;
+
                 case 4:
+                    System.out.println("Enter monthly salary if Full Time:");
+//                    double baseSalary = scanner.nextDouble();
+                    if (listData != null) {
+                        listData.calcMonthlySalary();
+                    }
+
+
+                case 6:
                     System.out.println("Exiting program.");
                     return;
                 default:

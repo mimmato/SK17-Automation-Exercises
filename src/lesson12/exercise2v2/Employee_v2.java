@@ -1,33 +1,38 @@
-package lesson12.exercise2;
+package lesson12.exercise2v2;
 
-public class Employee {
+public class Employee_v2 {
 
-    public int id;
+    private int id;
     private String firstName;
     private String lastName;
 
     public double salary;
     private double annualSalary;
 
-//    private double raiseSalary;
-    public double percentageIncrease;
-
-    public Employee(int id, String firstName, String lastName, double salary, double percentageIncrease){
+    public Employee_v2(int id, String firstName, String lastName, double salary){
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.salary = salary;
         this.annualSalary = getAnnualSalary();
-        this.percentageIncrease = percentageIncrease;
     }
 
     public void getName() {
         System.out.println("Names: " + this.firstName + " " + this.lastName);
     }
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Integer getId(){
+        return this.id;
+    }
+
     public void printAllEmployeeData(){
-        System.out.println("Employee ID: " + this.id);
+        System.out.println("Employee ID:" + getId());
         getName();
+
         System.out.println("Salary specified: " + this.salary);
         System.out.println("Annual salary: " + getAnnualSalary());
     }

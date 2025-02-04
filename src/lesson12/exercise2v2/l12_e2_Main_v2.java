@@ -1,12 +1,12 @@
-package lesson12.exercise2;
+package lesson12.exercise2v2;
 
 import java.util.HashSet;
 import java.util.Scanner;
 
-public class l12_e2_Main {
+public class l12_e2_Main_v2 {
     public static void main(String[] args) {
 
-        HashSet<Employee> employeeData = new HashSet<>();
+        HashSet<Employee_v2> employeeV2Data = new HashSet<>();
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
@@ -23,6 +23,7 @@ public class l12_e2_Main {
             switch (choice) {
 
                 case 1:
+
                     System.out.println("Enter ID: ");
                     int id = scanner.nextInt();
                     scanner.nextLine();
@@ -37,18 +38,17 @@ public class l12_e2_Main {
                     int salary = scanner.nextInt();
                     scanner.nextLine();
 
-                    double percentageIncrease = 0;
-                    Employee listData = new Employee(id, firstName, lastName, salary, percentageIncrease);
+                    Employee_v2 listData = new Employee_v2(id, firstName, lastName, salary);
 
                     boolean ifIdExists = false;
-                    for (Employee i : employeeData) {
-                        if (i.id == id) {
+                    for (Employee_v2 i : employeeV2Data) {
+                        if (i.getId() == id) {
                             ifIdExists = true;
                             break;
                         }
                     }
                     if (!ifIdExists) {
-                        employeeData.add(listData);
+                        employeeV2Data.add(listData);
                         listData.setAnnualSalary(salary);
                         System.out.println("New employee added");
                     } else {
@@ -58,11 +58,11 @@ public class l12_e2_Main {
                     break;
 
                 case 2:
-                    if (employeeData.isEmpty()) {
+                    if (employeeV2Data.isEmpty()) {
                         System.out.println("No employee info yet.");
                     } else {
                         System.out.println("Employee data list");
-                        for (Employee i : employeeData) {
+                        for (Employee_v2 i : employeeV2Data) {
                             System.out.println("----------------");
                             i.printAllEmployeeData();
                         }
@@ -71,23 +71,23 @@ public class l12_e2_Main {
                     break;
 
                 case 3:
-                    if (employeeData.isEmpty()) {
+                    if (employeeV2Data.isEmpty()) {
                         System.out.println("No employee info yet.");
                     } else {
                         System.out.println("Enter employee ID to modify: ");
                         int employeeId = scanner.nextInt();
-                        Employee selectEmployee = null;
+                        Employee_v2 selectEmployeeV2 = null;
 
-                        for (Employee i : employeeData) {
-                            if (i.id == employeeId) {
-                                selectEmployee = i;
+                        for (Employee_v2 i : employeeV2Data) {
+                            if (i.getId() == employeeId) {
+                                selectEmployeeV2 = i;
                                 break;
                             }
                         }
-                        if (selectEmployee != null) {
+                        if (selectEmployeeV2 != null) {
                             System.out.println("Enter percentage increase: ");
-                            double percentage = scanner.nextDouble();
-                            selectEmployee.setRaiseSalary(percentage);
+                            double percentageIncrease = scanner.nextDouble();
+                            selectEmployeeV2.setRaiseSalary(percentageIncrease);
                         } else {
                             System.out.println("Employee ID: " + employeeId + " not found.");
                         }
