@@ -3,7 +3,7 @@ package lesson12.exercise3v2;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class l12_e2_Main_v2 {
+public class l12_e3_Main_v2 {
     public static void main(String[] args) {
 
         HashMap<Integer, Employee_v2> employeeV2Data = new HashMap<>();
