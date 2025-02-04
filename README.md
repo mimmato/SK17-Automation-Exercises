@@ -23,9 +23,7 @@ This repository contains my Java exercises as I practice object-oriented program
    javac FileName.java
    java FileName
    ```
-
-
-
+   
 # Java Exercises
 
 This repository contains my Java exercises, organized by lessons and exercises. Each lesson focuses on different programming concepts such as OOP, file handling, data structures, and more.
@@ -40,7 +38,7 @@ This repository contains my Java exercises, organized by lessons and exercises. 
 - [Exercise 5: Triangle Angles](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson4/l4_e5_trianglesAngles.java)
 - [Exercise 6: Vacation Options](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson4/l4_e6_vacationOptions.java)
 
-### Lesson 5: Loops
+### Lesson 5: Loops (for, for-each, nested, while, do/while)
 - [Exercise 1: Largest Number](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson5/l5_e1_largestNumber.java)
 - [Exercise 2: Divisible by 5](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson5/l5_e2_divideBy5.java)
 - [Exercise 3: Reverse List](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson5/l5_e3_reverseList.java)
@@ -49,18 +47,18 @@ This repository contains my Java exercises, organized by lessons and exercises. 
 - [Exercise 6: Average in List](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson5/l5_e6_averageInList.java)
 - [Exercise 7: Numbers Guessing Game](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson5/l5_e7_numbersGuessing.java)
 
-### Lesson 6: Data structures. Static and Dynamic. Array, Multidimensional Array, ArrayList, LinkedList, Queue, Stack.
+### Lesson 6: Data structures. Static and Dynamic (Array, Multidimensional Array, ArrayList, LinkedList, Queue, Stack).
 - [Exercise 1: Print Sum of Array](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson6/l6_e1_printSumArray.java)
 - [Exercise 2: 2D Matrix](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson6/l6_e2_2dMatrix.java)
 - [Exercise 3: 2D Matrix Scan](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson6/l6_e3_2dMatrixScan.java)
-- [Exercise 4: Biggest Element in Array](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson6/l6_e4_biggestElement.java)
-- [Exercise 5: To-Do List](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson6/l6_e5_toDoList.java)
-- [Exercise 6: Lottery Numbers](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson6/l6_e6_lotteryNumbers.java)
-- [Exercise 7: Contacts Linked List](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson6/l6_e7_contactsLinkedList.java)
-- [Exercise 8: Clients Line Queue](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson6/l6_e8_clientsLineQueue.java)
-- [Exercise 9: Book Stack](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson6/l6_e9_bookStack.java)
+- [Exercise 4: Biggest Element in (Array)](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson6/l6_e4_biggestElement.java)
+- [Exercise 5: To-Do (ArrayList)](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson6/l6_e5_toDoList.java)
+- [Exercise 6: Lottery Numbers (ArrayList)](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson6/l6_e6_lotteryNumbers.java)
+- [Exercise 7: Contacts (Linked List)](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson6/l6_e7_contactsLinkedList.java)
+- [Exercise 8: Clients Line (Queue)](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson6/l6_e8_clientsLineQueue.java)
+- [Exercise 9: Book (Stack)](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson6/l6_e9_bookStack.java)
 
-### Lesson 7: Data structures Advanced. HashSet and HashMap.
+### Lesson 7: Data structures II. HashSet and HashMap.
 - [Exercise 1: Inventory Tracking(HashMap)](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson7/l7_e1_trackingInventory.java)
 - [Exercise 2: Guest List (HashSet)](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson7/l7_e2_guestList.java)
 
@@ -87,13 +85,13 @@ This repository contains my Java exercises, organized by lessons and exercises. 
 - [Exercise 2: File Read](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson10/l10_e2_fileRead.java)
 - [Exercise 3: Age Validation](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson10/l10_e3_ageValidate.java)
 
-### Lesson 11: OOP and Inheritance and Polymorphism
+### Lesson 11: OOP. Inheritance and Polymorphism
 - [Exercise 1: Shapes](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson11/exercise1)
 - [Exercise 2: Appliances](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson11/exercise2)
 - [Exercise 3: Factory Reset](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson11/exercise3)
 - [Exercise 4: Appliances Revisited](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson11/exercise4)
 
-### Lesson 12: OOP and Abstraction and Encapsulation. Interfaces.
+### Lesson 12: OOP II. Abstraction and Encapsulation. Interfaces.
 - [Exercise 1: Shapes](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson12/exercise1)
 - [Exercise 2: Employee Class (HashMap)](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson12/exercise2v2)
 - [Exercise 3: Employee abstract Class (HashMap)](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson12/exercise3v2)
