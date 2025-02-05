@@ -18,15 +18,10 @@ public class Person {
     public String countryOfResidence;
     public String job;
 
-//    The Person class should have methods – sayHello(), celebrateEaster(), isAdult(), canTakeLoan() with
-//    the relevant parameters if any.
-//            sayHello() should print Hello based on concrete person spoken language, default is in English.
-//    celebrateEaster should print if the concrete person celebrates Easter based on their religion.
-//    isAdult should take in consideration the country of residence.
-//    canTakeLoan is based on the job.
-//    Languages – Bulgarian / Italian / English; Countries – Bulgaria (18) / Italy (18) / USA
-//            (21); Sex – Male / Female
-//    Religions – Orthodox / Catholic / Islam
+//    Create 4 classes Child, Bulgarian, American and Italian which inherit Person class
+//    Use polymorphism to change the implementation of the methods that need different behavior.
+//    Implement new methods specific only for the concrete class.
+//    Create different objects in the main class and use their methods.
 
     public Person(String EGN, String name, String sex, String religion, String languageSpoken, String job, String nationality, String countryOfResidence) throws ParseException {
 
@@ -45,6 +40,7 @@ public class Person {
         this.nationality = nationality;
         this.dateOfBirth = getFirstSixEGN();
         this.countryOfResidence = countryOfResidence;
+
     }
 
     public String getFirstSixEGN() throws ParseException {
@@ -96,7 +92,7 @@ public class Person {
     }
 
 
-    public void sayHello() {
+    public String sayHello() {
         if ("bulgarian".equalsIgnoreCase(this.languageSpoken)) {
             System.out.println("Greeting in " + this.languageSpoken.toUpperCase() + ": Здравей");
         } else if ("italian".equalsIgnoreCase(this.languageSpoken)) {
@@ -104,6 +100,7 @@ public class Person {
         } else {
             System.out.println("Hello! Language " + this.languageSpoken.toUpperCase() + " is unknown");
         }
+        return null;
     }
 
     public void celebrateEaster() {
@@ -131,7 +128,21 @@ public class Person {
             }
         }
 
+    public String getJob() {
+        return this.job;
+    }
 
+    public void setNationality(){
+    }
+    public String getNationality(){
+        return this.nationality;
+    }
 
+    public void setLanguageSpoken(){
+
+    }
+    public String getLanguageSpoken(){
+        return this.languageSpoken;
+    }
 
 }
