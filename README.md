@@ -2,13 +2,6 @@
 
 This repository contains my Java exercises as I practice object-oriented programming and other core concepts.
 
-## Topics
-- **Basic Syntax**: Variables, data types, operators.
-- **Control Flow**: If statements, loops, and switch cases.
-- **Methods & Classes**: Function definitions, constructors, and object interactions.
-- **OOP Concepts**: Inheritance, polymorphism, encapsulation, and abstraction.
-- **Miscellaneous**: Other Java features and problem-solving exercises.
-
 ## How to Run
 1. Clone the repository:
    ```bash
@@ -16,7 +9,7 @@ This repository contains my Java exercises as I practice object-oriented program
    ```
 2. Navigate to the project folder:
    ```bash
-   cd src/lesson$
+   cd src/lessonX/
    ```
 3. Compile and run a specific Java file:
    ```bash
@@ -96,3 +89,5 @@ This repository contains my Java exercises, organized by lessons and exercises. 
 - [Exercise 2: Employee Class (HashMap)](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson12/exercise2v2)
 - [Exercise 3: Employee abstract Class (HashMap)](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson12/exercise3v2)
 
+### Lesson 13:
+- [Exercise 1: ]()
