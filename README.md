@@ -90,4 +90,6 @@ This repository contains my Java exercises, organized by lessons and exercises. 
 - [Exercise 3: Employee abstract Class (HashMap)](https://github.com/mimmato/SK17-Automation-Exercises/blob/master/src/lesson12/exercise3v2)
 
 ### Lesson 13:
-- [Exercise 1: ]()
+- [Exercise 1: OOP: Modeling a Person – Attributes, Validation, and Inheritance](https://github.com/mimmato/SK17-Automation-Exercises/tree/master/src/lesson13/exercise2)
+
+Lesson 14 continues in another repository named [SK17-Automation-Maven](https://github.com/mimmato/SK17-Automation-Maven) which will review Maven specific tests.
