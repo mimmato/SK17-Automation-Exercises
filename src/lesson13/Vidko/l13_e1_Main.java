@@ -1,4 +1,4 @@
-package lesson13.Vitko;
+package lesson13.Vidko;
 
 public class l13_e1_Main {
         public static void main(String[] args) {

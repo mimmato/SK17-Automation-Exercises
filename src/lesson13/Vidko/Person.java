@@ -1,4 +1,4 @@
-package lesson13.Vitko;
+package lesson13.Vidko;
 
 public class Person {
 
