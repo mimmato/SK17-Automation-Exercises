@@ -12,23 +12,32 @@ public class Bulgarian extends Person {
         return "bulgarian".equalsIgnoreCase(getNationality());
     }
 
+    String languages = getNationality().toUpperCase();
+
     @Override
     public String getLanguageSpoken() {
-        String languages = getNationality().toUpperCase();
 
         if ("BULGARIAN".equalsIgnoreCase(languages)) {
             return "BULGARIAN";
         } return "BULGARIAN and " + languages;
     }
 
+    public void sayHello() {
+        boolean ifLangIsBulgarian = "BULGARIAN".equals(languages) || languages.contains("BULGARIAN");
+        switch (languages) {
+            case "BULGARIAN" -> System.out.println("Greeting in " + languages + " - Здравей!");
+            case "ITALIAN" -> System.out.println("Greeting in " + languages + " - Ciao!");
+            case "ENGLISH" -> System.out.println("Greeting in " + languages + " - Hello!");
+            default -> System.out.println("Language " + languages + " is unknown - Hello!");
+        }
+        if (!ifLangIsBulgarian) {
+            System.out.println("Greeting in BULGARIAN - Здравей!");
+        }
+    }
     @Override
     public String setCountryOfResidence(){
-        return "Bulgaria";
+        return "Bulgaria".toUpperCase();
     }
 
-//    @Override
-//    public String sayHello() {
-//        return "Greeting in BULGARIAN - Здравей!";
-//    }
 }
 

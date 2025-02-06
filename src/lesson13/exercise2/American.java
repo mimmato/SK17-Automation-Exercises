@@ -11,21 +11,34 @@ public class American extends Person{
         return "american".equalsIgnoreCase(getNationality());
     }
 
+    String languages = getNationality().toUpperCase();
 
     @Override
     public String getLanguageSpoken() {
-        String languages = getNationality().toUpperCase();
 
         if ("ENGLISH".equalsIgnoreCase(languages)) {
             return "ENGLISH";
         } return "ENGLISH and " + languages;
     }
+    @Override
+    public void sayHello() {
+        boolean ifLangIsEnglish = "ENGLISH".equals(languages) || languages.contains("ENGLISH");
+        switch (languages) {
+            case "BULGARIAN" -> System.out.println("Greeting in " + languages + " - Здравей!");
+            case "ITALIAN" -> System.out.println("Greeting in " + languages + " - Ciao!");
+            case "ENGLISH" -> System.out.println("Greeting in " + languages + " - Hello!");
+            default -> System.out.println("Language " + languages + " is unknown - Hello!");
+        }
+        if (!ifLangIsEnglish) {
+            System.out.println("Greeting in ENGLISH - Hello!");
+        }
+    }
 
     @Override
     public String setCountryOfResidence(){
         return "USA";
-    }
-
-
 
 }
+
+}
+

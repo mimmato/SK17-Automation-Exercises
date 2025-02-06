@@ -11,10 +11,10 @@ public class Italian extends Person{
         return "italian".equalsIgnoreCase(getNationality());
     }
 
+    String languages = getNationality().toUpperCase();
 
     @Override
     public String getLanguageSpoken() {
-        String languages = getNationality().toUpperCase();
 
         if ("italian".equalsIgnoreCase(languages)) {
             return "italian";
@@ -26,5 +26,18 @@ public class Italian extends Person{
         return "Italy";
     }
 
+    @Override
+    public void sayHello() {
+        boolean ifLangIsItalian = "ITALIAN".equals(languages) || languages.contains("ITALIAN");
+        switch (languages) {
+            case "BULGARIAN" -> System.out.println("Greeting in " + languages + " - Здравей!");
+            case "ITALIAN" -> System.out.println("Greeting in " + languages + " - Ciao!");
+            case "ENGLISH" -> System.out.println("Greeting in " + languages + " - Hello!");
+            default -> System.out.println("Language " + languages + " is unknown - Hello!");
+        }
+        if (!ifLangIsItalian) {
+            System.out.println("Greeting in ITALIAN - Ciao!");
+        }
+    }
 
 }
