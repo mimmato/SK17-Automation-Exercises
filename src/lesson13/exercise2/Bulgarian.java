@@ -7,24 +7,28 @@ public class Bulgarian extends Person {
         super(EGN, name, sex, religion, languageSpoken, job, nationality, countryOfResidence);
     }
 
-    public void isBulgarian() {
-        if (!("bulgarian".equalsIgnoreCase(getNationality()))) {
-            System.out.println("You are NOT Bulgarian!");
-        } else {
-            System.out.println("You are Bulgarian");
-        }
-    }
 
-    public String sayHello() {
-        return "Здравей";
+    public boolean isBulgarian() {
+        return "bulgarian".equalsIgnoreCase(getNationality());
     }
 
     @Override
     public String getLanguageSpoken() {
-        return "Bulgarian";
+        String languages = getNationality().toUpperCase();
+
+        if ("BULGARIAN".equalsIgnoreCase(languages)) {
+            return "BULGARIAN";
+        } return "BULGARIAN and " + languages;
     }
 
+    @Override
+    public String setCountryOfResidence(){
+        return "Bulgaria";
+    }
 
-
+//    @Override
+//    public String sayHello() {
+//        return "Greeting in BULGARIAN - Здравей!";
+//    }
 }
 

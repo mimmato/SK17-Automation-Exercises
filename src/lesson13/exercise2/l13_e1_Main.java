@@ -21,69 +21,102 @@ public class l13_e1_Main {
         System.out.println("Date of birth: " + TestPerson.getFirstSixEGN());
         System.out.println("Current age: " + TestPerson.getAge());
         System.out.println("Sex is: " + TestPerson.getSex());
-        TestPerson.sayHello();
+
         TestPerson.celebrateEaster();
         System.out.println("You are " + TestPerson.getAge() + " years old in " + TestPerson.countryOfResidence.toUpperCase() + ". " + TestPerson.isAdult());
         TestPerson.isAdult();
         System.out.println(TestPerson.canTakeLoan());
         System.out.println("Spoken language: " + TestPerson.getLanguageSpoken());
 
+        TestPerson.sayHello3();
+
         System.out.println("-------------------------------");
-
-
-        Child littleChild = new Child(
-                "9907238684",
-                "Tosho Junior",
-                "male",
-                "cathOlic",
-                "spanish",
-                "tech",
-                "Bulgarian",
-                "bulgaria"
-        );
-        littleChild.isChild();
-
-        System.out.println("EGN is: " + littleChild.getEGN());
-        System.out.println("Date of birth: " + littleChild.getFirstSixEGN());
-        littleChild.sayHello();
-        System.out.println("job: " + littleChild.getJob());
-        System.out.println(littleChild.canTakeLoan());
-        System.out.println("Age: " + littleChild.getAge());
-        System.out.println("Spoken language: " + littleChild.getLanguageSpoken());
-        System.out.println("-------------------------------");
-
-        Bulgarian Ganyo = new Bulgarian(
-                "8907238684",
-                "Tosho the Bulgarian",
-                "male",
-                "cathOlic",
-                "Turkish",
-                "tech",
-                "Irish",
-                "bulgaria"
-        );
-
-        System.out.println("Nationality: " + Ganyo.getNationality());
-        Ganyo.isBulgarian();
-        System.out.println("Spoken language: " + Ganyo.getLanguageSpoken());
-        System.out.println(Ganyo.sayHello());
-        System.out.println("-------------------------------");
+//
+//
+//        Child littleChild = new Child(
+//                "9907238684",
+//                "Tosho Junior",
+//                "male",
+//                "cathOlic",
+//                "spanish",
+//                "tech",
+//                "Bulgarian",
+//                "bulgaria"
+//        );
+//        littleChild.isChild();
+//
+//        System.out.println("EGN is: " + littleChild.getEGN());
+//        System.out.println("Date of birth: " + littleChild.getFirstSixEGN());
+//        littleChild.sayHello();
+//        System.out.println("job: " + littleChild.getJob());
+//        System.out.println(littleChild.canTakeLoan());
+//        System.out.println("Age: " + littleChild.getAge());
+//        System.out.println("Spoken language: " + littleChild.getLanguageSpoken());
+//        System.out.println("-------------------------------");
+//
+//        Bulgarian Ganyo = new Bulgarian(
+//                "8907238684",
+//                "Tosho the Bulgarian",
+//                "male",
+//                "cathOlic",
+//                "Turkish",
+//                "cleaner",
+//                "Moldovian",
+//                "Poland"
+//        );
+//
+//        System.out.println("Are you Bulgarian? " + Ganyo.isBulgarian());
+//        System.out.println("Nationality: " + Ganyo.getNationality());
+//        System.out.println("Country of residence: " + Ganyo.setCountryOfResidence().toUpperCase());
+//        System.out.println("Spoken language: " + Ganyo.getLanguageSpoken());
+//        Ganyo.sayHello();
+////        Ganyo.sayHello2();
+//    System.out.println("-------------------------------");
 
         American Trump = new American(
                 "2907238684",
-                "Tosho the Bulgarian",
+                "Tosho the American",
                 "male",
                 "cathOlic",
-                "Turkish",
+                "turkish",
                 "tech",
-                "Irish",
-                "bulgaria"
+                "bosnian",
+                "somalia"
         );
 
+        System.out.println("Are you American? " + Trump.isAmerican());
         System.out.println("Nationality: " + Trump.getNationality());
-        Trump.isAmerican();
+
+        System.out.println("Country of residence: " + Trump.setCountryOfResidence().toUpperCase());
         System.out.println("Spoken language: " + Trump.getLanguageSpoken());
-        System.out.println(Trump.sayHello());
+        Trump.sayHello3();
+        System.out.println(Trump.getFirstSixEGN());
+
+        System.out.println("-------------------------------");
+
+
+
+
+//        Italian Marco = new Italian(
+//                "8907238684",
+//                "Marco the Italian",
+//                "female",
+//                "muslim",
+//                "italian",
+//                "tech",
+//                "Georgian",
+//                "Hungary"
+//        );
+//
+//        System.out.println("Are you Italian? " + Marco.isItalian());
+//        System.out.println("Nationality: " + Marco.getNationality());
+//        System.out.println("Country of residence: " + Marco.setCountryOfResidence().toUpperCase());
+//        System.out.println("Spoken language: " + Marco.getLanguageSpoken());
+//        Marco.sayHello();
+////        Marco.sayHello2();
+//        Marco.celebrateEaster();
+
+
     }
 }
 

@@ -4,7 +4,6 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-
 public class Person {
 
     private final String name;
@@ -18,10 +17,6 @@ public class Person {
     public String countryOfResidence;
     public String job;
 
-//    Create 4 classes Child, Bulgarian, American and Italian which inherit Person class
-//    Use polymorphism to change the implementation of the methods that need different behavior.
-//    Implement new methods specific only for the concrete class.
-//    Create different objects in the main class and use their methods.
 
     public Person(String EGN, String name, String sex, String religion, String languageSpoken, String job, String nationality, String countryOfResidence) throws ParseException {
 
@@ -92,16 +87,70 @@ public class Person {
     }
 
 
-    public String sayHello() {
-        if ("bulgarian".equalsIgnoreCase(this.languageSpoken)) {
-            System.out.println("Greeting in " + this.languageSpoken.toUpperCase() + ": Здравей");
-        } else if ("italian".equalsIgnoreCase(this.languageSpoken)) {
-            System.out.println("Greeting in " + this.languageSpoken.toUpperCase() + ": Ciao");
+//    public void sayHello() {
+//        if ("bulgarian".equalsIgnoreCase(this.languageSpoken)) {
+//            System.out.println("Greeting in " + this.languageSpoken.toUpperCase() + " - Здравей!");
+//        } else if ("italian".equalsIgnoreCase(this.languageSpoken)) {
+//            System.out.println("Greeting in " + this.languageSpoken.toUpperCase() + " - Ciao!");
+//        } else if ("english".equalsIgnoreCase(this.languageSpoken)) {
+//            System.out.println("Greeting in " + this.languageSpoken.toUpperCase() + " - Hello!");
+//        } else {
+//            System.out.println("Language " + this.languageSpoken.toUpperCase() + " is unknown - Hello!");
+//        }
+//        }
+
+    public void sayHello2() {
+        if ("bulgarian".equalsIgnoreCase(this.nationality)) {
+            System.out.println("Greeting in " + this.nationality.toUpperCase() + " - Здравей!");
+        } else if ("italian".equalsIgnoreCase(this.nationality)) {
+            System.out.println("Greeting in " + this.nationality.toUpperCase() + " - Ciao!");
         } else {
-            System.out.println("Hello! Language " + this.languageSpoken.toUpperCase() + " is unknown");
+            System.out.println("Language " + this.nationality.toUpperCase() + " is unknown - Hello!");
         }
-        return null;
     }
+
+    public void sayHello3() {
+        String languages = getLanguageSpoken();
+        boolean toGreet = false;
+
+        if (languages.contains("BULGARIAN")) {
+            System.out.println("Greeting in Bulgarian - Здравей!");
+            toGreet = true;
+        }
+        if (languages.contains("ITALIAN")) {
+            System.out.println("Greeting in Italian - Ciao!");
+            toGreet = true;
+        }
+        if (languages.contains("ENGLISH")) {
+            System.out.println("Greeting in English - Hello!");
+            toGreet = true;
+        }
+
+        if (!toGreet) {
+            System.out.println("Languages are unknown - Greeting with Hello!");
+
+        }
+    }
+
+//    public void sayHello3() {
+//        String languages = getLanguageSpoken();
+//
+//        if (languages.contains("BULGARIAN")) {
+//            System.out.println("Greeting in Bulgarian - Здравей!");
+//        }
+//        if (languages.contains("ITALIAN")) {
+//            System.out.println("Greeting in Italian - Ciao!");
+//        }
+//        if (languages.contains("ENGLISH")) {
+//            System.out.println("Greeting in English - Hello!");
+//        }
+//
+//        if (!languages.contains("BULGARIAN") && !languages.contains("ITALIAN") && !languages.contains("ENGLISH")) {
+//            System.out.println("Languages are unknown - Greeting with Hello!");
+//        }
+//    }
+
+
 
     public void celebrateEaster() {
         if (!("Orthodox".equalsIgnoreCase(this.religion) || "Catholic".equalsIgnoreCase(this.religion))) {
@@ -135,7 +184,7 @@ public class Person {
     public void setNationality(){
     }
     public String getNationality(){
-        return this.nationality;
+        return this.nationality.toUpperCase();
     }
 
     public void setLanguageSpoken(){
@@ -145,4 +194,7 @@ public class Person {
         return this.languageSpoken;
     }
 
+    public String setCountryOfResidence(){
+        return this.countryOfResidence.toUpperCase();
+    }
 }

@@ -7,27 +7,25 @@ public class American extends Person{
         super(EGN, name, sex, religion, languageSpoken, job, nationality, countryOfResidence);
     }
 
-    public void isAmerican() {
-        if (!("american".equalsIgnoreCase(getNationality()))) {
-            System.out.println("You are NOT American!");
-        } else {
-            System.out.println("You are American");
-        }
+    public boolean isAmerican() {
+        return "american".equalsIgnoreCase(getNationality());
     }
 
-    public String sayHello() {
-        return "Hello";
-    }
 
     @Override
     public String getLanguageSpoken() {
-        if (isAmerican()){
-            return "English" + " and " + getNationality();
-        } else{
-            return "English";
-        }
+        String languages = getNationality().toUpperCase();
 
+        if ("ENGLISH".equalsIgnoreCase(languages)) {
+            return "ENGLISH";
+        } return "ENGLISH and " + languages;
     }
+
+    @Override
+    public String setCountryOfResidence(){
+        return "USA";
+    }
+
 
 
 }
