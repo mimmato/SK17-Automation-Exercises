@@ -35,7 +35,7 @@ public class Bulgarian extends Person {
         }
     }
     @Override
-    public String setCountryOfResidence(){
+    public String getCountryOfResidence(){
         return "Bulgaria".toUpperCase();
     }
 

@@ -22,7 +22,7 @@ public class Italian extends Person{
     }
 
     @Override
-    public String setCountryOfResidence(){
+    public String getCountryOfResidence(){
         return "Italy";
     }
 

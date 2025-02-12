@@ -66,7 +66,7 @@ public class l13_e1_Main {
 
         System.out.println("Are you Bulgarian? " + Ganyo.isBulgarian());
         System.out.println("Nationality: " + Ganyo.getNationality());
-        System.out.println("Country of residence: " + Ganyo.setCountryOfResidence().toUpperCase());
+        System.out.println("Country of residence: " + Ganyo.getCountryOfResidence().toUpperCase());
         System.out.println("Spoken language: " + Ganyo.getLanguageSpoken());
         Ganyo.sayHello();
 
@@ -85,7 +85,7 @@ public class l13_e1_Main {
 
         System.out.println("Are you American? " + Trump.isAmerican());
         System.out.println("Nationality: " + Trump.getNationality());
-        System.out.println("Country of residence: " + Trump.setCountryOfResidence().toUpperCase());
+        System.out.println("Country of residence: " + Trump.getCountryOfResidence().toUpperCase());
         System.out.println("Spoken language: " + Trump.getLanguageSpoken());
         Trump.sayHello();
         System.out.println("-------------------------------");
@@ -103,7 +103,7 @@ public class l13_e1_Main {
 
         System.out.println("Are you Italian? " + Marco.isItalian());
         System.out.println("Nationality: " + Marco.getNationality());
-        System.out.println("Country of residence: " + Marco.setCountryOfResidence().toUpperCase());
+        System.out.println("Country of residence: " + Marco.getCountryOfResidence().toUpperCase());
         System.out.println("Spoken language: " + Marco.getLanguageSpoken());
         Marco.sayHello();
         Marco.celebrateEaster();

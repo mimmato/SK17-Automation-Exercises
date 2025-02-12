@@ -35,7 +35,7 @@ public class American extends Person{
     }
 
     @Override
-    public String setCountryOfResidence(){
+    public String getCountryOfResidence(){
         return "USA";
 
 }

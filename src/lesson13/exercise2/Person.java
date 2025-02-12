@@ -141,7 +141,7 @@ public class Person {
         return this.languageSpoken.toUpperCase();
     }
 
-    public String setCountryOfResidence(){
+    public String getCountryOfResidence()   {
         return this.countryOfResidence.toUpperCase();
     }
 }
